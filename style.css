@@ -1,0 +1,49 @@
+
+/* Bild size */
+img {
+  width: 25%;
+}
+
+
+
+  /* Buttons */
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0dff00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #fdfd07;
+  }
+
+/* Sidans design */
+
+  section#pro {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  section#pro h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  section#pro p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
