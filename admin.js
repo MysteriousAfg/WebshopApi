@@ -52,6 +52,23 @@ setTimeout(() => {
 
 }
 
+function getData(name) {
+    console.log(name);
+    fetch("https://firestore.googleapis.com/v1/" + name)
+    .then(res => res.json())
+    .then(data=>updateData(data))
+}
+
+function updateData(data) {
+    console.log("updateData körs...");
+    console.log(data);
+    productIdEl.value = data.fields.productId.integerValue;
+    usernameEl.value = data.fields.username.stringValue;
+    emailEl.value = data.fields.email.stringValue;
+    adressEl.value = data.fields.adress.stringValue;
+    shippingEl.value = data.fields.shipping.stringValue;
+}
+
 function updateOrder(name) {
     console.log("Order updated");
     let productId = productIdEl.value;

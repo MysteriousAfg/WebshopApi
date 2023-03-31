@@ -66,6 +66,11 @@ function postOrder(){
     let adress = adressEl.value;
     let shipping = shippingEl.value;
 
+    if (!username || !email || !adress || shipping== "") {
+        console.log("Fyll i alla fält!")
+        return;
+    }
+
    /* Get local storage info */
     let json = localStorage.getItem("cart");
     let object = JSON.parse(json);
